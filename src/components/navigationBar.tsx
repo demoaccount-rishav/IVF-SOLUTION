@@ -2,6 +2,7 @@ import { StyleSheet } from 'react-native';
 import { Foundation, MaterialIcons, FontAwesome } from '@expo/vector-icons';
 import { Text, View } from '@/components/Themed';
 import { TouchableOpacity } from 'react-native';
+import { Alert } from 'react-native';
 
 
 
@@ -31,7 +32,7 @@ export default function NavigationBar() {
                 <View style={designer.iconWrapper}>
 
                     <FontAwesome name="bell" size={28} color="#ffac32" onPress={() => {
-                        console.warn('no new notification');
+                        Alert.alert('No Notification');
                     }} />
 
                     <MaterialIcons name="account-circle" size={28} color="white" />
